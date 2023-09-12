@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.applicationdemo"
-    compileSdk = 33
+    compileSdk = 34
     defaultConfig {
         applicationId = "com.example.applicationdemo"
         minSdk = 24
@@ -66,14 +66,14 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
     implementation("io.ktor:ktor-client-core:1.6.3")
     implementation("io.ktor:ktor-client-android:1.6.3")
     implementation("io.ktor:ktor-client-serialization:1.6.3")
     implementation("io.ktor:ktor-client-logging:1.6.3")
     implementation("ch.qos.logback:logback-classic:1.2.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
-
-
-
-
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation ("androidx.navigation:navigation-compose:2.7.2")
 }
